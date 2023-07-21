@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" id="scrollContainer">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tailwind.css">
+    <link rel="stylesheet" href="style.scss">
+
+    <title>Document</title>
+</head>
+<body>
+    <section><!--navbar-->
+        <div id="navbar" class="fixed top-0 left-0 right-0 navGrid bg-[#B7B94C] h-[114px] border-b-4 border-black z-50 max-[1279px]:hidden">
+            <div class="flex flex-row justify-start m-4 text-4xl items-center relative gap-10">
+                <a class="font-bold" href="#home-sec">HOME</a>
+                <a class="font-bold" href="#">BLOG</a>
+                <a class="font-bold" href="#proj-sec">PROJECTS</a>
+                <a class="font-bold" href="#cont-me">CONTACT ME</a>
+            </div>
+            <div></div>
+            <a href="https://docs.google.com/document/d/1Sl5lzt-LLcJgJwX55kU4VMpf0Hl86yp7/edit?usp=sharing&ouid=101189956616699820989&rtpof=true&sd=true" class="h-[65px] w-[260px] flex justify-center items-center mt-[22px] rounded-full border-2 border-black bg-[#DBDF17] dbtn">
+                <div class="grid grid-flow-row row-end-2">
+                    <p class="flex flex-row justify-center font-medium ">Download Resume</p>
+                    <div class="flex flex-row justify-center"><img src="./images/material-symbols_download-for-offline.svg" alt="dwnld-btn"></div>
+                </div>
+            </a>
+        </div>
+    </section>
+    <!--HOME SECTION-->
+    <section id="home-sec">
+        <div class="grid xl:grid-flow-col xl:col-span-2 grid-flow-row row-span-2 h-[718px] mt-28 max-[1279px]:mt-5">
+            <div class="flex flex-col justify-center items-center">
+                <div class="grid grid-flow-row max-[1279px]:mt-0">
+                    <p class="font-bold text-left text-[64px] max-[1279px]:text-[40px]">Hey!<br>I'm Lakshay <span class="wave">👋</span></p>
+                    <div>
+                    <div class='console-container max-[1279px]:text-[20px]'><span id='text'></span><div class='console-underscore' id='console'>&#95;</div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center items-center max-[1279px]:order-[-1]">
+                <div class="w-[421px] h-[421px] bg-[#FF9900] rounded-[30px] border-2 border-black max-[1279px]:w-[270px] max-[1279px]:h-[270px] max-[1279px]:rounded-[20px]">
+                    <div class="w-[421px] h-[421px] bg-[#FC71FF] rounded-[30px] border-2 border-black relative top-[30px] left-[34px] max-[1279px]:w-[270px] max-[1279px]:h-[270px] max-[1279px]:top-[15px] max-[1279px]:left-[17px] max-[1279px]:rounded-[20px] z-[0]">
+                        <img class="w-[381px] h-[381px] rounded-[30px] border-2 border-black relative top-[28px] left-[28px] max-[1279px]:w-[235px] max-[1279px]:h-[235px] max-[1279px]:top-[26px] max-[1279px]:left-[26px] max-[1279px]:rounded-[20px] z-[1]" src="./images/me2.png" alt="lakshay">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--PROJECTss-->
+    <section id="proj-sec" class="h-[1500px]">
+        <div class="flex justify-center"><p class="font-bold text-[58px] mb-[60px] max-[1279px]:text-[34px]">SELECTED WORKS</p></div>
+        <div class="briddle xl:briddle2 flex flex-row justify-center">
+            <div class="flex xl:items-center max-[1279px]:flex-col items-center justify-center gap-8">
+                <a href="https://lakpareek.github.io/html-portfolio/">
+                    <img class="h-[118.8px] w-[200px] xl:h-[235px] flex justify-center xl:w-[395px] rounded-[20px] xl:rounded-[30px] border-2 border-black lboxshad niq2" src="./images/htmport.png" alt="xyz">
+                </a>
+                <div class="h-[77px] w-[350px] xl:h-[145px] xl:w-[650px] bg-[#F0F0E1] rounded-[20px] xl:rounded-[30px] border-2 border-black relative xl:right-[155px] xl:top-[45px] z-[-1]">
+                    <div class="xl:absolute xl:left-[84px]">
+                        <h2 class="text-center xl:ml-[70px] font-bold xl:text-[46px] xl:text-left">HTML Portfolio</h2>
+                        <p class="text-center xl:ml-[70px] font-light xl:text-left">Made a HTML Portfolio</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex xl:items-center max-[1279px]:flex-col items-center justify-center gap-8">
+                <div class="h-[77px] w-[350px] xl:h-[145px] xl:w-[650px] bg-[#F0F0E1] rounded-[20px] xl:rounded-[30px] border-2 border-black relative xl:left-[155px] xl:top-[45px] z-[-1] order-2 xl:order-1">
+                    <div class="xl:absolute xl:right-[84px]">
+                        <h2 class="text-center xl:mr-[70px] font-bold xl:text-[46px] xl:text-right">TinDog</h2>
+                        <p class="text-center xl:mr-[70px] font-light xl:text-right">Made a Landing page using Bootstrap</p>
+                    </div>
+                </div>
+                <a href="https://lakpareek.github.io/tindog2/" class="order-1 xl:order-2">
+                    <img class="h-[118.8px] w-[200px] xl:h-[235px] xl:w-[395px] rounded-[20px] xl:rounded-[30px] border-2 border-black rboxshad niq1 xl:niq1" src="./images/tinda.png" alt="xyz">
+                </a>
+            </div>
+            <div class="flex xl:items-center max-[1279px]:flex-col items-center justify-center gap-8">
+                <a href="https://lakpareek.github.io/Simon-Game/">
+                    <img class="h-[118.8px] w-[200px] xl:h-[235px] flex justify-center xl:w-[395px] rounded-[20px] xl:rounded-[30px] border-2 border-black lboxshad niq2" src="./images/simgame2.png" alt="xyz">
+                </a>
+                <div class="h-[77px] w-[350px] xl:h-[145px] xl:w-[650px] bg-[#F0F0E1] rounded-[20px] xl:rounded-[30px] border-2 border-black relative xl:right-[155px] xl:top-[45px] z-[-1]">
+                    <div class="xl:absolute xl:left-[84px]">
+                        <h2 class="text-center xl:ml-[70px] font-bold xl:text-[46px] xl:text-left">Simon Game</h2>
+                        <p class="text-center xl:ml-[70px] font-light xl:text-left">Made a Simon Game with jQuery</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex xl:items-center max-[1279px]:flex-col items-center justify-center gap-8">
+                <div class="h-[77px] w-[350px] xl:h-[145px] xl:w-[650px] bg-[#F0F0E1] rounded-[20px] xl:rounded-[30px] border-2 border-black relative xl:left-[155px] xl:top-[45px] z-[-1] order-2 xl:order-1">
+                    <div class="xl:absolute xl:right-[84px]">
+                        <h2 class="text-center xl:mr-[70px] font-bold xl:text-[46px] xl:text-right">SafeZone</h2>
+                        <p class="text-center xl:mr-[70px] font-light xl:text-right">Made a women safety app for a hackathon</p>
+                    </div>
+                </div>
+                <a href="https://lakpareek.github.io/SafeZone2/" class="order-1 xl:order-2">
+                    <img class="h-[118.8px] w-[200px] xl:h-[235px] xl:w-[395px] rounded-[20px] xl:rounded-[30px] border-2 border-black rboxshad niq1" src="./images/sz2.png" alt="xyz">
+                </a>
+            </div>
+        </div>
+    </section>
+    <!--FOOTER-->
+    <section id="cont-me">
+        <div class="h-[180px] mx-a border-black bg-[#B7B94C] border-t-4">
+            <div class="grid grid-flow-row row-span-2 gap-3">
+                <div class="flex justify-center mt-2.5 text-[36px]"><p class="font-bold">Let's Connect!</p></div>
+                <div class="flex flex-row justify-center space-x-6">
+                    <a href="https://www.linkedin.com/in/lakshay-pareek-253486268/"><img class="h-[46px] w-[46px] rounded-[10px] border-2 border-black lboxshad ico9" src="./images/LinkedIn_icon.svg" alt="linkedin"></a>
+                    <a href="#" title="Instagram Old Instagram Logo PNG Image With Transparent Background"><img class="h-[46px] w-[46px] rounded-[10px] border-2  border-black lboxshad ico9" src="./images/ig-logo.png" alt="insta" /></a>
+                    <a href="https://github.com/lakpareek"><img class="h-[46px] w-[46px] rounded-[10px] border-2  border-black lboxshad ico9" src="./images/GIthub-logo.png" alt="github"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+<!--
+    Projects Section
+    <div class="h-[1436px]">
+        <div class="flex justify-center"><p class="font-bold text-[58px]">SELECTED WORKS</p></div>
+        <div class="grid grid-flow-row row-span-4 gap-[90px] mt-10">
+            <div class="grid grid-flow-col col-span-2">
+                <a href="#"><img class="h-[235px] w-[395px] bg-slate-50 rounded-[30px] relative left-[80px] border-2 border-black lboxshad niq2" src="./images/sz2.png" alt="img-sz"></a>
+                <div class="h-[145px] w-[650px] rounded-[30px] relative top-[90px] right-[225px] bg-[#F0F0E1] border-2 border-black -z-20"></div>
+            </div>
+            <div class="grid grid-flow-col col-span-2">
+                <div class="h-[235px] w-[395px] bg-slate-50 rounded-[30px] relative left-[965px] border-2 border-black rboxshad niq1"></div>
+                <div class="h-[145px] w-[650px] rounded-[30px] relative top-[90px] right-[170px] bg-[#F0F0E1] border-2 border-black -z-20">vvv</div>
+            </div>
+            <div class="grid grid-flow-col col-span-2">
+                <div class="h-[235px] w-[395px] bg-slate-50 rounded-[30px] relative left-[80px] border-2 border-black lboxshad niq2"></div>
+                <div class="h-[145px] w-[650px] rounded-[30px] relative top-[90px] right-[225px] bg-[#F0F0E1] border-2 border-black -z-20">vvv</div>
+            </div>
+            <div class="grid grid-flow-col col-span-2">
+                <div class="h-[235px] w-[395px] bg-slate-50 rounded-[30px] relative left-[965px] border-2 border-black rboxshad niq1"></div>
+                <div class="h-[145px] w-[650px] rounded-[30px] relative top-[90px] right-[170px] bg-[#F0F0E1] border-2 border-black -z-20 ">vvv</div>
+            </div>
+        </div>
+    </div>
+-->
+
+<!--
+    <section class="">
+        <div class="grid grid-flow-row row-span-2 h-[500px] min-[1279px]:hidden">
+            <a href="#"><img class="h-[235px] w-[395px] bg-slate-50 rounded-[30px] border-2 border-black lboxshad niq2 mb-0" src="./images/simgame2.png" alt="img-sz">
+        </div>
+    </section>
+-->

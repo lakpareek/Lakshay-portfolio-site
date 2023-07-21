@@ -1,0 +1,132 @@
+@import url("https://api.fontshare.com/v2/css?f[]=clash-display@400,700,500,600,300&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html{
+
+    font-family: 'Clash Display', sans-serif;
+    background-color: #E0E27C;
+}
+
+body{
+    cursor: url('https://cdn.custom-cursor.com/db/cursor/32/Rock_Hand_cursor.png'), auto;
+}
+
+a:hover{
+    cursor: url('https://cdn.custom-cursor.com/db/pointer/32/Rock_Hand_Pointer.png'), auto;
+}
+
+.lboxshad{
+    box-shadow: -8px 8px black;
+}
+.niq1:hover{
+    box-shadow: 0px 0px black;
+    position: relative;
+    left: 8px;
+}
+
+.niq2:hover{
+    box-shadow: 0px 0px black;
+    position: relative;
+    right: 8px;
+}
+.rboxshad{
+    box-shadow: 8px 8px black;
+}
+.dbtn:hover{
+    box-shadow: 8px 8px black;
+    position: relative;
+    left: 8px;
+}
+@media (max-width: 1279px) {
+    .lboxshad {
+      box-shadow: -8px 8px black; /* Adjust the left shadow for small screens */
+    }
+  
+    .rboxshad {
+      box-shadow: -8px 8px black; /* Adjust the right shadow for small screens */
+    }
+  
+    /* Revert the hover styles for shadows for smaller screens */
+    .niq1:hover,
+    .niq2:hover {
+        box-shadow: 0px 0px black;
+        position: relative;
+        right: 8px;
+    }
+  }
+.ico9:hover{
+    box-shadow: 0px 0px black;
+    position: relative;
+    right: 8px;
+}
+
+.navGrid{
+    display: grid;
+    grid-template-columns: 3.3fr 0.1fr 1.3fr;
+}
+
+.projectGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns with auto width (adjust as needed) */
+    gap: 10px; 
+}
+
+.wave{
+    animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.5s;        /* Change to speed up or slow down */
+    animation-iteration-count: infinite;  /* Never stop waving :) */
+    transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+    display: inline-block;
+}
+  
+@keyframes wave-animation{
+    0% { transform: rotate( 0.0deg) }
+    10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+    20% { transform: rotate(-8.0deg) }
+    30% { transform: rotate(14.0deg) }
+    40% { transform: rotate(-4.0deg) }
+    50% { transform: rotate(10.0deg) }
+    60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+    100% { transform: rotate( 0.0deg) }
+}
+
+
+.hidden {
+    opacity:0;
+  }
+  .console-container {
+    font-size:32px;
+    text-align:center;
+    display: inline;
+    color:black;
+    right:200px;
+    margin:auto;
+  }
+  .console-underscore {
+    display:inline-block;
+    position:relative;
+    
+    left:5px;
+  }
+
+  #navbar {
+
+    transition: top 0.3s; /* Transition effect when sliding down (and up) */
+  }
+
+  .briddle{
+    display: grid;
+    grid-template-rows: 1fr;
+    row-gap: 100px;
+  }
+
+  .briddle2{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 0.2fr 1fr 0.2fr;
+  }
+  
